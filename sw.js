@@ -1,7 +1,7 @@
 /* 離線快取：頁面先試網路（3 秒內沒回應就用快取），圖示等靜態檔直接用快取。
    記帳資料存在手機的 localStorage，不經過這裡，更新 App 也不會動到。
    改了 index.html 要把 VERSION 加 1，手機才會換新。 */
-const VERSION = 'ledger-v3';
+const VERSION = 'ledger-v4';
 const ASSETS = ['./', './index.html', './manifest.webmanifest', './icon-180.png', './icon-192.png', './icon-512.png', './a2hs.js', './a2hs-1.webp', './a2hs-2.webp', './a2hs-3.webp', './a2hs-4.webp'];
 
 self.addEventListener('install', e => {
