@@ -323,7 +323,7 @@ function backupBanner(){
 }
 function installBanner(){
   if(isStandalone() || S.ui.hideInstall) return '';
-  return '<div class="banner"><span>📲 建議先「加入主畫面」再記帳：瀏覽器和主畫面 App 的資料是分開的。</span><button class="btn" data-hide-install>知道了</button></div>';
+  return '<div class="banner"><span>📲 建議先「加入主畫面」再記帳：瀏覽器和主畫面 App 的資料是分開的。</span><button class="btn" data-a2hs-open>怎麼加</button><button class="btn" data-hide-install>知道了</button></div>';
 }
 
 function rowHTML(e,l){
@@ -721,5 +721,6 @@ if(typeof navigator!=='undefined' && 'serviceWorker' in navigator && location.pr
   navigator.serviceWorker.register('sw.js').catch(()=>{});
 }
 </script>
+<script src="a2hs.js" defer></script>
 </body>
 </html>
